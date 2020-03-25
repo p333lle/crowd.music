@@ -12,7 +12,14 @@ class _LoginViewState extends State<LoginView> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LoginForm(),
+      backgroundColor: Colors.black,
+      body: SingleChildScrollView(
+        child: Container(
+          margin: EdgeInsets.only(top: 250),
+          height: 400,
+          child: LoginForm(),
+        ),
+      ),
     );
   }
 }

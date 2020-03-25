@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:crowd_music/utils/colors.dart';
 
 
 class LoginInput extends StatefulWidget {
@@ -27,10 +28,13 @@ class _LoginInput extends State<LoginInput> {
                 obscureText: widget.obscureText != null ? widget.obscureText : false,
                 inputFormatters: widget.inputFormatters != null ? widget.inputFormatters : [],
                 controller: widget.controller != null ? widget.controller : null,
+                style: TextStyle(
+                  color: Colors.white
+                ),
                 decoration: InputDecoration(
                   labelText: widget.labelText,
                   errorText: snapshot.error,
-                  labelStyle: TextStyle(color: Colors.grey),
+                  labelStyle: TextStyle(color: FOREGROUND_COLOR),
                   focusedErrorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
                     borderSide: BorderSide(
@@ -48,11 +52,11 @@ class _LoginInput extends State<LoginInput> {
                   focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       borderSide:
-                      BorderSide(width: 3.0, color: Colors.yellow)),
+                      BorderSide(width: 3.0, color: FOREGROUND_COLOR)),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10.0)),
                     borderSide: BorderSide(
-                      color: Colors.grey,
+                      color: DARKBACKGROUND_COLOR,
                       width: 1.0,
                     ),
                   ),

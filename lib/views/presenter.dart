@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:crowd_music/user/user.dart';
+import 'package:crowd_music/utils/rest.dart';
 
 
 abstract class LoginScreenContract {

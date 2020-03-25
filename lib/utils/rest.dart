@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:crowd_music/user/user.dart';
 import 'package:crowd_music/utils/network_util.dart';
 
 class RestDatasource {
