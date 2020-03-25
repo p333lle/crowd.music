@@ -15,7 +15,6 @@ class User {
   String profilePic;
 
   User({this.username, this.first, this.last, this.classNum, this.classLet, this.token, this.loggedIn});
-
   User.map(dynamic obj) {
     this.username = obj["u_uid"];
     this.first = obj["u_first"];
